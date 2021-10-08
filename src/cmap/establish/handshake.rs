@@ -31,7 +31,7 @@ lazy_static! {
         if info.os_type() != Type::Unknown {
             let version = info.version();
 
-            if *version != Version::unknown() {
+            if *version != Version::Unknown {
                 os_subdoc.insert("version", info.version().to_string());
             }
         }
